@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#ABBA7C"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fitness Begins with What You Eat"
+        android:textColor="#31511E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/selectHealthyRecipeButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="16dp"/>
+
+    <Button
+        android:id="@+id/selectHealthyRecipeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#31511E"
+        android:text="Select a Healthy Recipe"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <Button
+        android:id="@+id/openCalorieCalculatorButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Calorie Calculator"
+        android:backgroundTint="#31511E"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/SearchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/viewPopularRecipesButton"
+        android:layout_width="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="View Popular Recipes"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#31511E"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/selectHealthyRecipeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <Button
+        android:id="@+id/benefitsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Benefits of Healthy Eating"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#31511E"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/viewPopularRecipesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Fitness Activities"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#31511E"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/benefitsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SearchButton"
+        app:layout_constraintVertical_bias="0.309" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

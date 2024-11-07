@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/health1"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        tools:ignore="ExtraText">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Healthy Recipes"
+            android:textColor="#31511E"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover tasty and healthy recipes that fit your healthy lifestyle. Whether you're looking for an energizing breakfast or a hearty dinner, you'll find easy meals perfect for you. Start exploring now!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="24sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#31511E"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
